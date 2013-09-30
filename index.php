@@ -145,4 +145,7 @@
 <div id="contentContainer">
 
 </div>
+<div id="copyrightFooter">
+	<h3>Copyright 2013 John Earle</h3>
+</div>
 </body>

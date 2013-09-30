@@ -10,7 +10,16 @@ body{
 	width:86%;
 	margin: 0px;
 	padding: 0px;
-	height: 100%;
+	height: 95%;
+}
+#copyrightFooter{
+	float: right;
+	width:86%;
+	margin: 0px;
+	padding: 0px;
+	height: 5%;
+	bottom: 0%;
+	text-align: center;
 }
 #menuBar {
 	width: 14%;
@@ -139,3 +148,12 @@ h1.pageContact{
 	background-color:RGBa(207,207,207,0.1);
 }
 
+#headShot{
+	width:10%;
+	display:block;
+	float:left;
+}
+#bio{
+	float: right;
+	width: 13%
+}
