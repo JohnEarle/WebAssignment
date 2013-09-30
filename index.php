@@ -41,7 +41,7 @@
 				var projectImages = new Array();
 				var currentImage = 0;
 				projectImages[0] = "./media/images/projects/radica.png"
-				projectImages[1] = "./media/images/projects/Dj-Snape.jpg"
+				projectImages[1] = "./media/images/projects/raSalesBonus.png"
 				projectImages[2] = "./media/images/projects/wallpaper.jpg"
 				function ImageSlider(key){
 					switch(key){

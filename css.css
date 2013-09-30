@@ -109,8 +109,7 @@ div.pageProjects.ProImg:hover{
 }
 img.pageProjects{
 	display: block;
-	height: auto;
-	width: 85%;
+	height: 100%;
 	opacity: 100%;
 	margin-left: auto;
 	margin-right: auto;
