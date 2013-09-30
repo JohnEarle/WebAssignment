@@ -1,3 +1,9 @@
+<!-- 
+File Name: pgBtAbout.php
+Author: John Earle
+Web Site Name: confound
+Description: Mainly text page, a basic photo with a resume in a paragraph tage formatted with line breaks
+ -->
 <div class="pageAbout">
 <img id="headshot" src="./media/images/headshot.png" class="pageAbout" />
 <div id="bio">

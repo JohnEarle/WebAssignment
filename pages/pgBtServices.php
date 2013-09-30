@@ -1,3 +1,11 @@
+<!-- 
+File Name: pgBtServices.php
+Author: John Earle
+Web Site Name: confound
+Description: basic services we offer
+ -->
+ 
+ <!-- Again plain and simple formatting tags-->
 <div class="pageServices">
 <h1 class="pageServices">Web Design</h1>
 <h3 class="pageServices">Ranging from a full design change to tool bar updates, what ever you can imagine we'll find a way to bring it to fruition.</h3>
