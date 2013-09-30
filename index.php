@@ -33,7 +33,8 @@
 				$('#contentContainer').fadeOut('slow',function(){
 					$('#contentContainer').load("pages/"+$(event.target).attr('id')+".php");
 					$('#contentContainer').fadeIn('slow');
-					activePage = $(event.target).attr('id')
+					activePage = $(event.target).attr('id');
+					selectedButton();
 				 	});
 				}
 	
@@ -42,7 +43,7 @@
 				var currentImage = 0;
 				projectImages[0] = "./media/images/projects/radica.png"
 				projectImages[1] = "./media/images/projects/raSalesBonus.png"
-				projectImages[2] = "./media/images/projects/wallpaper.jpg"
+				projectImages[2] = "./media/images/projects/confound.png"
 				function ImageSlider(key){
 					switch(key){
 					case 1:
@@ -70,6 +71,46 @@
 						};
 					};
 			});
+			function selectedButton(){
+				switch(activePage){
+					case "pgBtHome":
+					$('#pgBtHome').css('color',"#FFF");
+					$('#pgBtAbout').css('color',"#996600");
+					$('#pgBtProjects').css('color',"#996600");
+					$('#pgBtServices').css('color',"#996600");
+					$('#pgBtContact').css('color',"#996600");
+					break;
+					case "pgBtAbout":
+					$('#pgBtHome').css('color',"#996600");
+					$('#pgBtAbout').css('color',"#FFF");
+					$('#pgBtProjects').css('color',"#996600");
+					$('#pgBtServices').css('color',"#996600");
+					$('#pgBtContact').css('color',"#996600");
+					break;
+					case "pgBtProjects":
+					$('#pgBtHome').css('color',"#996600");
+					$('#pgBtAbout').css('color',"#996600");
+					$('#pgBtProjects').css('color',"##FFF");
+					$('#pgBtServices').css('color',"#996600");
+					$('#pgBtContact').css('color',"#996600");
+					break;
+					case "pgBtServices":
+					$('#pgBtHome').css('color',"#996600");
+					$('#pgBtAbout').css('color',"#996600");
+					$('#pgBtProjects').css('color',"#996600");
+					$('#pgBtServices').css('color',"#FFF");
+					$('#pgBtContact').css('color',"#996600");
+					break;
+					case "pgBtContact":
+					$('#pgBtHome').css('color',"#996600");
+					$('#pgBtAbout').css('color',"#996600");
+					$('#pgBtProjects').css('color',"#996600");
+					$('#pgBtServices').css('color',"#996600");
+					$('#pgBtContact').css('color',"#FFF");
+					break;
+				}
+			}
+
 			});
 	</script>
 </head>
