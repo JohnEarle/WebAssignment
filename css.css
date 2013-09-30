@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #000;
+	font-family: 'Raleway', sans-serif;
+	color: #996600;
+}
+#contentContainer{
+	float: right;
+	width:86%;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+#menuBar {
+	width: 14%;
+	float: left;
+	position: absolute;
+	background-color: #996600; 
+	height: 100%;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+}
+#menuLogo{
+	width: 100%;
+	display: inline-block;
+	position: inherit;
+	top: 0%;
+	bottom: 10%;
+	padding: 0px;
+	
+}
+.pageSelButton {
+	color: #996600;
+	background-color: #000;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	height: 5%;
+	font-size: 25px;
+}
+.pageSelButton:hover {
+	color: #FFFFFF;
+	}
+#logoContainer{ 
+top: 0px;
+bottom: 12.5%;
+padding: 0px;
+margin: none;
+}
+
+#welcomeMsgContainer{
+	position: relative;
+	width: auto;
+	height: 7%;
+	float: left;
+	font-size: small;
+}
+div.pageHome{
+		border-bottom: solid #996600 medium;
+		border-top: solid #996600 medium;
+		border-right: none;
+		border-left: none;
+		overflow: hidden;
+	 }
+#missionStatement.pageHome{
+	display: block;
+	position: relative;
+	bottom: -10%;
+	float:left;
+}
+#keepConnected{
+	position: absolute;
+	width: auto;
+	float: right;
+	bottom: 1%;
+	right: 1%;
+	text-align: center;
+}
+img.keepConnected{
+	display: inline-block;
+	margin: auto;
+}
+.pageHome H1{ color: #996600; }
+#imgSliderDiv.pageHome{
+	display: block;
+	position: absolute;
+	bottom: 1%;
+	width: 35%;
+	height: 35%;
+}
+#imgSlider.pageHome{
+	display: block;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.pageProjects{
+		border-right: solid #996600 medium;
+		border-left: solid #996600 medium;
+		border-top: none;
+		border-bottom: none;
+		overflow: hidden;
+		height: 100%;
+	 }
+div.pageProjects.ProImg:hover{
+	background-color:RGBa(207,207,207,0.1);
+}
+img.pageProjects{
+	display: block;
+	height: auto;
+	width: 85%;
+	opacity: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contKeepConnected.pageContact{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width:auto;
+	left: 54%;
+	top: 35%;	
+}
+h1.pageContact{
+		position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width:auto;
+	right: 0%;
+	top: 10%;	
+}
+.pageServices{
+	text-align: center;
+}
+.pageServices:hover{
+	background-color:RGBa(207,207,207,0.1);
+}
+
