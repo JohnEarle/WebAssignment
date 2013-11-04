@@ -2,7 +2,6 @@
 $(document).ready(function(e) {
             	var activePage = new String("pgBtHome");
 				var loadPage = new String('');
-				
 				$('.pageSelButton').click(function(event){
 					changePage(event);
 				});
@@ -25,13 +24,23 @@ $(document).ready(function(e) {
 					selectedButton();
 				 	});
 				}
+				//Not sure how to overload in javascript and dont have the time
+				function changePageNonEvent(selection){
+				activePage = selection;
+				$('#contentContainer').fadeOut('slow',function(){
+					$('#contentContainer').load("pages/"+selection+".php");
+					$('#contentContainer').fadeIn('slow');
+					activePage = selection;
+					selectedButton();
+				 	});
+				}
 			
 				// 3 photos for the image slide in the array.
 				var projectImages = new Array();
 				var currentImage = 0;
-				projectImages[0] = "./media/images/projects/radica.png"
-				projectImages[1] = "./media/images/projects/raSalesBonus.png"
-				projectImages[2] = "./media/images/projects/confound.png"
+				projectImages[0] = "./media/images/projects/radica.jpg"
+				projectImages[1] = "./media/images/projects/raSalesBonus.jpg"
+				projectImages[2] = "./media/images/projects/confound.jpg"
 				//the array is advanced to change the image
 				//1 being forward 2 being backwards
 				function ImageSlider(key){
@@ -64,6 +73,52 @@ $(document).ready(function(e) {
 						});
 				}
 				//detects key presses for image slider
+	
+				$("#contentContainer").swipe({ swipe:function(event,direction,distance,duration,fingerCount){
+						if(fingerCount == 1 || fingerCount == 0){
+							if(activePage == "pgBtProjects"||activePage == "pgBtHome"){
+								if(direction == "right"){
+									ImageSlider(1);
+								}
+								else if(direction == "left"){
+									ImageSlider(2);
+								}
+							}
+					}
+					else if(fingerCount == 2){
+						var forwardPage;
+						var backwardPage;
+						switch(activePage){
+							case "pgBtHome":
+								forwardPage = "pgBtAbout";
+								backwardPage = "pgBtContact";
+							break;
+							case "pgBtAbout":
+								forwardPage = "pgBtProjects";
+								backwardPage = "pgBtHome";
+							break;
+							case "pgBtProjects":
+								forwardPage = "pgBtServices";
+								backwardPage = "pgBtAbout";
+							break;
+							case "pgBtServices":
+								forwardPage = "pgBtContact";
+								backwardPage = "pgBtProjects";
+							break;
+							case "pgBtContact":
+								forwardPage = "pgBtHome";
+								backwardPage = "pgBtServices";
+							break;
+						}
+						if(direction == "right"){
+									changePageNonEvent(forwardPage);
+								}
+								else if(direction == "left"){
+									changePageNonEvent(backwardPage);
+								}
+					}
+					}});
+				 
 				$(document).keyup(function(event){
 					if(activePage == "pgBtProjects"||activePage == "pgBtHome"){
 						if(event.keyCode == 37){

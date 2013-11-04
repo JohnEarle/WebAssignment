@@ -18,7 +18,8 @@ Description: home page with img slider and social media links
 <!-- img slider controled by javascript in index -->
 <div class="pageHome ProImg" id="imgSliderDiv">
 <h3>Featured Work:</h3>
- 	<img id="imgSlider" class="pageHome" src="./media/images/projects/radica.png" />
+ 	<img id="imgSlider" class="pageHome" src="./media/images/projects/radica.jpg" />
+    <span class="ui-icon ui-icon-arrowthick-1-n"></span>
 </div>
 <!-- Keep connected run by linke script at top-->
 <div id="keepConnected" class="pageHome">
